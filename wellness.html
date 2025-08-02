@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Affirmations</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🌼 Affirmations</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="tracker.html">Tracker</a>
+      <a href="diary.html">Diary</a>
+      <a href="goals.html">Goals</a>
+      <a href="routine.html">Routine</a>
+      <a href="settings.html">Settings</a>
+      <a href="affirmations.html" class="active">Affirm</a>
+    </nav>
+  </header>
+
+  <main class="affirmations-page">
+    <h1 class="page-title">💫 Daily Affirmations</h1>
+
+    <div class="affirmation-card glassmorphic">
+      <p class="affirmation-text">🌸 I am growing stronger and more confident every day.</p>
+    </div>
+
+    <div class="affirmation-card glassmorphic">
+      <p class="affirmation-text">🌞 I radiate positivity and attract good energy.</p>
+    </div>
+
+    <div class="affirmation-card glassmorphic">
+      <p class="affirmation-text">🌷 I am proud of how far I've come and excited for what's ahead.</p>
+    </div>
+
+    <button class="cute-button" onclick="newAffirmation()">✨ New Affirmation</button>
+  </main>
+
+  <script>
+    const affirmations = [
+      "I am enough just as I am. 🌈",
+      "Every day is a fresh start. ☀️",
+      "I choose to prioritize my happiness. 🧁",
+      "My mind is calm, my body is relaxed. 🍃",
+      "I let go of what I can’t control. 🌬️",
+    ];
+
+    function newAffirmation() {
+      const text = affirmations[Math.floor(Math.random() * affirmations.length)];
+      const card = document.createElement("div");
+      card.className = "affirmation-card glassmorphic";
+      card.innerHTML = `<p class="affirmation-text">${text}</p>`;
+      document.querySelector(".affirmations-page").insertBefore(card, document.querySelector(".cute-button"));
+    }
+  </script>
+</body>
+</html>

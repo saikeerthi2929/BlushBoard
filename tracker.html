@@ -1,0 +1,47 @@
+<!-- tracker.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cycle Tracker | BlushBoard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+</head>
+<body class="tracker-page">
+  <header>
+    <img src="assets/icons/logo1.jpg" alt="BlushBoard Logo" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tracker.html" class="active">Tracker</a>
+      <a href="diary.html">Diary</a>
+      <a href="wellness.html">Wellness</a>
+      <a href="goals.html">Goals</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+
+  <main class="tracker-container">
+    <h1>Track Your Cycle</h1>
+    <p>Select your last period date and your average cycle length. We’ll help you track your next cycle.</p>
+
+    <div class="tracker-form">
+      <label>Last Period Date:
+        <input type="date" id="last-period-date" />
+      </label>
+      <label>Average Cycle Length (days):
+        <input type="number" id="cycle-length" placeholder="28" min="21" max="35" />
+      </label>
+      <button onclick="calculateCycle()">Predict Next Period</button>
+
+      <div id="prediction-result"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© BlushBoard 2025</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

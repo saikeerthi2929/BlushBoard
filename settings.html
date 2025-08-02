@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Settings</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">⚙️ Settings</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="tracker.html">Tracker</a>
+      <a href="diary.html">Diary</a>
+      <a href="goals.html">Goals</a>
+      <a href="routine.html">Routine</a>
+      <a href="settings.html" class="active">Settings</a>
+    </nav>
+  </header>
+
+  <main class="settings-page">
+    <h1 class="page-title">✨ Preferences & Customization</h1>
+    
+    <div class="settings-card glassmorphic">
+      <h2>🧚 Theme</h2>
+      <label class="toggle-switch">
+        <input type="checkbox" id="darkModeToggle">
+        <span class="slider"></span>
+      </label>
+      <span>Dark Mode</span>
+    </div>
+
+    <div class="settings-card glassmorphic">
+      <h2>🔔 Notifications</h2>
+      <label class="toggle-switch">
+        <input type="checkbox" id="notifyToggle" checked>
+        <span class="slider"></span>
+      </label>
+      <span>Reminders & Alerts</span>
+    </div>
+
+    <div class="settings-card glassmorphic">
+      <h2>🖋️ Account</h2>
+      <button class="cute-button">Edit Profile</button>
+      <button class="cute-button pink">Reset All Data</button>
+    </div>
+
+    <div class="settings-card glassmorphic">
+      <h2>🌸 About</h2>
+      <p>This self-care app was made with love to help you glow inside and out! 💕</p>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
